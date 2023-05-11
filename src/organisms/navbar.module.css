@@ -1,0 +1,42 @@
+.container {
+  /* width: 100%; */
+  background-color: "blue";
+  /* display: flex; */
+  flex-direction: row;
+}
+
+.navbar {
+  width: 100%;
+  background-color: "blue";
+  color: white;
+  order: 2;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  -webkit-backdrop-filter: blur(118px);
+  backdrop-filter: blur(18px);
+}
+/* #0aff9d */
+.hoverItem {
+  display: inline-block;
+  color: #0aff9d;
+  text-decoration: none;
+  /* border-radius: 0%; */
+  cursor: pointer;
+}
+.hoverItem::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0aff9d;
+  transition: width 0.3s;
+  margin-top: 4px;
+  /* border-bottom:1px solid white; */
+}
+
+.hoverItem:hover::after {
+  /* left: 0; */
+  color: white;
+  width: 100%;
+}

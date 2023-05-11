@@ -1,0 +1,37 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.innerContainer {
+  justify-content: space-around;
+  /* background-color: red; */
+  display: flex;
+  max-width: 480px;
+  margin: auto;
+}
+
+.contactButton {
+  background-color: #0aff9d;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: black;
+  border: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.resumeButton {
+  background-color: #0aff9d;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: black;
+  border: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}

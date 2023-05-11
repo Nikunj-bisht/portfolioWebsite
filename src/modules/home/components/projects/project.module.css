@@ -1,0 +1,32 @@
+.container{
+   margin-top: 90px;
+}
+
+.projectHeader{
+   display: flex;
+flex: 1;
+justify-content: space-between;
+width: 100%;
+/* width: 100%; */
+}
+
+.projectText{
+   text-align: center;
+   width: 50%;
+   font-size: 30px;
+   color: white;
+}
+
+.point {
+  color: #0aff9d;
+  font-size: 5rem;
+}
+.projects{
+    
+}
+
+/* edit profile changes and fixes */
+/* will work on common report builder fixes */
+/*  work on bug fixes of lp */
+/* notification */
+

@@ -1,0 +1,129 @@
+.outerContainer{
+    /* display: flex; */
+    width: 100%;
+    /* flex-direction: row; */
+}
+
+.container {
+  /* flex: 1; */
+  margin-top: 140px;
+  /* flex-grow: 1; */
+  /* width: 90%; */
+  /* margin: auto; */
+  /* background-color: wheat; */
+}
+.name {
+  font-size: 90px;
+  color: white;
+  font-weight: 1000;
+}
+.hoverItem {
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.hoverItem::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0aff9d;
+  transition: width 0.3s;
+  margin-top: 4px;
+  transition: width 0.6s;
+
+  /* border-bottom:1px solid white; */
+}
+
+.name:hover::before {
+  color: #0aff9d;
+  width: 100%;
+}
+
+.hoverItem ::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.stack {
+  color: white;
+  font-size: 40px;
+}
+.developer {
+  color: #0aff9d;
+  font-size: 40px;
+}
+
+.hoverItem :hover::before {
+  left: 0;
+}
+
+.point {
+  color: #0aff9d;
+  font-size: 5rem;
+}
+.intro {
+  text-align: center;
+  /* width: 100%; */
+  /* background-color: blue; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.briefintro {
+  color: white;
+  max-width: 600px;
+  /* background-color: red; */
+  margin: auto;
+  position: relative;
+line-height: 25px;
+  /* padding: 0; */
+  /* justify-self: center;     */
+  /* text-align: center; */
+  /* background-color: red; */
+}
+.briefintro::before {
+    content: "Software Engineer with good problem solving skills and ability to perform good in team . Passionate about web and android development and always curious to learn new technology.";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0aff9d;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: width 0.4s ;
+}
+
+.briefintro:hover::before {
+    /* color: yellow; */
+
+    width: 100%;
+}
+
+.medialinks{
+    height: 130px;
+    /* background-color: wheat; */
+    right: 0;
+    position: absolute;
+    top: 80px;
+    /* flex-grow: 1; */
+    width: 5%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    /* height: 30%; */
+}
