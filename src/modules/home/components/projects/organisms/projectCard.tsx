@@ -49,8 +49,10 @@ const ProjectCard = (props: Props) => {
       >
         <h3 className={classes.projectTitle}>
           {name}
-          <span>
+          <span
+>
             <svg
+              style={{marginLeft:"8px",marginTop:"0px"}}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 30 30"
               width="30px"

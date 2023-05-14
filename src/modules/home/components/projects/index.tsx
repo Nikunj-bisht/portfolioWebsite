@@ -36,7 +36,7 @@ const Project = () => {
       name: "Scribble Clone",
       techStack: "Nodejs - Expressjs - SOCKET.IO - HTML - CSS",
       description:
-        "Interview preparetion Android app with real time face and expression detection.Where users can record there interview",
+        "The Game is a multiplayer realtime drawing game where participants take turns creating drawings based on random prompts or specific themes. The game encourages players to let their imagination run wild and create unique interpretations of the given prompts.",
       img: require("../../../../public/png.png"),
     },
     {
@@ -65,7 +65,7 @@ const Project = () => {
     }
   }, [controls1, viewCardRef]);
   return (
-    <div className={classes.container}>
+    <div id="projectId" className={classes.container}>
       <div className={classes.projectHeader}>
         <div></div>
         <motion.div

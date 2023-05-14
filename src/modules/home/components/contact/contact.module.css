@@ -1,0 +1,22 @@
+h1{
+    color: white;
+    font-size: 100px;
+}
+
+.container{
+    flex:1;
+    justify-content: center;
+margin-top: 180px;
+}
+p{
+    color: white;
+}
+h2{
+  color: white;
+  font-weight: 400;
+  margin-top: 60px;
+}
+h2:hover{
+    color: #0aff9d;
+    transition: 1.4s;
+}
