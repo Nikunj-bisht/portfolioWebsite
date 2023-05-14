@@ -93,23 +93,10 @@ line-height: 25px;
   /* text-align: center; */
   /* background-color: red; */
 }
-.briefintro::before {
-    content: "Software Engineer with good problem solving skills and ability to perform good in team . Passionate about web and android development and always curious to learn new technology.";
 
-  position: absolute;
-  top: 0;
-  left: 0;
+.briefintro:hover{
   color: #0aff9d;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: width 0.4s ;
-}
-
-.briefintro:hover::before {
-    /* color: yellow; */
-
-    width: 100%;
+  transition: 1.7s;
 }
 
 .medialinks{

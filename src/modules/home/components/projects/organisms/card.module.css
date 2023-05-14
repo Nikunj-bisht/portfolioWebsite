@@ -1,5 +1,60 @@
 .card{
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
+    display: flex;
+    /* flex-direction: row; */
+    flex: 1 ;
+    /* background-color: aqua; */
+    margin-bottom: 1px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* height: 200px; */
+    /* justify-content: space-between; */
+
+}
+@media only screen and (max-width: 600px) {
+  .card {
+ flex-direction: column;
+  }
+}
+.image{
+  max-width: 50%;
+  background-color: white;
+flex: 1;
+overflow: hidden;
+align-items: center;
+text-align: center  ;
+justify-content: center;
+object-fit: contain;
+}
+
+.description{
+width: 50%;
+text-align: center;
+display: flex;
+/* flex: 1; */
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+
+.projectTitle{
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.img{
+  height: 500px;
+  border-radius: 5%;
+}
+.techStack{
+  color: #0aff9d;
+
+}
+.desc{
+   color: #ebecf3;
+   padding: 10px;
+   font-weight: 200;
+   font-size: 21px;
+   line-height: 34px;
 }

@@ -5,15 +5,22 @@ const NavBar = () => {
   const [list, setList] = useState([
     {
       name: "About",
+      id:"#aboutId"
     },
     {
       name: "Projects",
+      id:"#projectId"
+
     },
     {
       name: "Experience",
+      id:"#experienceId"
+
     },
     {
       name: "Contact",
+      id:"#contactId"
+
     },
   ]);
   const [currentHover, setCurrentHover] = useState("");
@@ -29,7 +36,9 @@ const NavBar = () => {
           }}
         >
           {list.map((item) => (
-            <li className={classes.hoverItem}>{item.name}</li>
+            <li onClick={()=>{
+              document.querySelector(item.id).scrollIntoView({behavior:'smooth'})
+            }} id={item.id} className={classes.hoverItem}>{item.name}</li>
           ))}
         </ul>
       </div>
